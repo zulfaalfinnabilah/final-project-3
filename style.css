@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poor Story', cursive;
+    background-color: grey;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+section {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+.container-fluid{
+    width: 100%;
+    /* padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem); */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div {
+    display: block;
+}
+.g-0, .gy-0 {
+    --bs-gutter-y: 0;
+}
+.g-0, .gx-0 {
+    --bs-gutter-x: 0;
+}
+.row {
+    /* --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+
+element.style {
+    background-image: url(assets/img/bg-showcase-1.jpg);
+}
+.showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+}
+.text-white {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.showcase .showcase-text {
+    padding: 3rem;
+}
+.my-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    /* padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-top: var(--bs-gutter-y); */
+}
+
+h2 {
+    text-align: center;
+    color:rgb(55, 78, 143);
+    text-shadow: 1px -2px rgb(100, 100, 158);
+    font-family: 'Poor Story', cursive;
+    font-size: 45px;
+    
+}
+
+p {
+text-align: center;
+font-family: 'Poor Story', cursive;
+font-size: 25px;
+color: black;
+}
+
+.section-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 45px;
+    width: 60%;
+    margin: 60px auto;
+}
+.card{
+    background-color: #fff;
+    box-shadow: 0 20px 40px grey;
+}
+
+.card-img{
+    width: 100%;
+    display: block;
+}
+
+.card-details{
+    padding: 10px 0;
+}
+
+.card-details ul{
+    list-style: none;
+    display: flex ;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    padding: 5px 0;
+}
+
+.card-details ul li{
+    width: 100%;
+    text-align: center;
+    font-family: 'Poor Story', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0;
+    border-bottom: 1px sienna;
+}
+
+.animasi{
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.tombol-aktif{
+    padding: 10px 40px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    float: left;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.biru{
+    background-color: #3498db;
+    border-bottom: 5px solid #2980b9;
+    text-shadow: 0px -2px #2980b9;
+}
+
+.tombol-aktif:active {
+    transform: translate(100px, 52px);
+    -webkit-transform: translate(0px, 5px);
+    border-bottom: 1px solid;
+}
